@@ -509,7 +509,9 @@ Tree.prototype.updateLiElement = function (node) {
 
   switch (node.status) {
     case 0:
-      classList.remove('treejs-node__halfchecked', 'treejs-node__checked');
+      //classList.remove('treejs-node__halfchecked', 'treejs-node__checked');
+      classList.remove('treejs-node__halfchecked');
+      classList.remove('treejs-node__checked');
       break;
 
     case 1:
